@@ -1,63 +1,138 @@
-<!-- force rebuild -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Swaraj Wadkar | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"/>
+  <title>Swaraj Wadkar | DevOps & Cloud Enthusiast</title>
   <style>
+    :root {
+      --bg: #fdfdfd;
+      --text: #1f2937;
+      --accent: #4da6ff;
+      --card-bg: #ffffff;
+      --border: #dbeafe;
+    }
+
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0e0e0e;
-      color: #4cbb17;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--accent);
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
     }
-    .btn {
-      background-color: #4cbb17;
-      color: black;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: var(--text);
+    }
+
+    .project a {
+      color: var(--accent);
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
     }
-    .btn:hover {
-      background-color: #3fa114;
+
+    .project a:hover {
+      text-decoration: underline;
     }
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.9rem;
-      color: #888;
+
+    .contact {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Hi, I'm Swaraj Wadkar</h1>
-  <p>DevOps | Full Stack | Cloud Enthusiast</p>
 
-  <a href="https://github.com/SwarajWadkar" class="btn" target="_blank">View My GitHub</a>
+  <header>
+    <h1>Swaraj Wadkar</h1>
+    <p>DevOps & Cloud Enthusiast</p>
+  </header>
 
-  <footer>
-    Designed & Built by Swaraj Wadkar
-  </footer>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m a DevOps and Cloud enthusiast passionate about automation, containers, and scalable infrastructure. I enjoy working on real-world projects that combine backend systems with deployment pipelines and cloud-native tooling.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>🎬 Video Player App</h3>
+        <p>A web app to stream local, MP4, HLS, and YouTube videos with drag & drop and custom UI.</p>
+        <a href="https://github.com/SwarajWadkar/video-player-app" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>🌈 Color Pulse App</h3>
+        <p>A graphical canary deployment demo app built with FastAPI, Docker, and Kubernetes.</p>
+        <a href="https://github.com/SwarajWadkar/color-pulse-app" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:swaraj.x.wadkar@gmail.com">swaraj.x.wadkar@gmail.com</a></p>
+  </section>
+
 </body>
 </html>
 
