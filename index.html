@@ -5,103 +5,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Swaraj Wadkar - DevOps & Cloud Portfolio</title>
+  <title>Swaraj Wadkar | DevOps & Cloud Portfolio</title>
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #fdf6ee; /* crème */
-      color: #1a1a1a;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f5ef; /* Creme */
+      color: #0a2f43; /* Deep blue */
     }
-
     header {
-      background-color: #d4eafd; /* light blue */
-      padding: 40px 20px;
+      background-color: #c2e9fb; /* Light blue */
+      padding: 2rem;
       text-align: center;
     }
-
-    header h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-
-    header p {
-      font-size: 1.2em;
-      color: #333;
+    .desc {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
-
-    section {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
     }
-
-    .project {
-      background-color: #ffffff;
-      border-left: 6px solid #8ac4f0;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    .card {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      transition: transform 0.2s ease;
+      text-align: center;
     }
-
-    .project h2 {
-      margin-top: 0;
-      color: #1a73e8;
+    .card:hover {
+      transform: translateY(-5px);
     }
-
-    .project p {
-      margin-bottom: 10px;
-    }
-
-    .project a {
+    .card a {
+      color: #0077b6;
       text-decoration: none;
-      color: #0d47a1;
       font-weight: bold;
     }
-
-    .contact {
+    .email {
       text-align: center;
-      font-size: 1.1em;
-      margin-top: 60px;
-      color: #444;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
-
-      .project {
-        padding: 15px;
-      }
+      margin: 2rem;
+      font-size: 1rem;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Swaraj Wadkar</h1>
-    <p>DevOps & Cloud Enthusiast Portfolio</p>
+    <p class="desc">DevOps and Cloud Enthusiast</p>
   </header>
 
-  <section>
-    <div class="project">
-      <h2>🎬 Video Player App</h2>
-      <p>A web app to play videos from uploads or links. Supports .mp4, HLS (.m3u8), and YouTube.</p>
-      <a href="https://github.com/SwarajWadkar/video-player-app" target="_blank">View on GitHub</a>
+  <section class="projects">
+    <div class="card">
+      <h2>🎥 Video Player App</h2>
+      <p>A responsive web app that supports HLS, MP4, YouTube playback, and local uploads.</p>
+      <a href="https://github.com/SwarajWadkar/video-player-app" target="_blank">View Project</a>
     </div>
-
-    <div class="project">
+    <div class="card">
       <h2>🌈 Color Pulse App</h2>
-      <p>A graphical web app built with TailwindCSS + FastAPI for canary deployment demos in Kubernetes.</p>
-      <a href="https://github.com/SwarajWadkar/color-pulse-project" target="_blank">View on GitHub</a>
+      <p>A smooth animated gradient UI for canary deployment demonstrations.</p>
+      <a href="https://github.com/SwarajWadkar/color-pulse-project" target="_blank">View Project</a>
     </div>
-
-    <div class="contact">
-      📧 Contact: <a href="mailto:swaraj.x.wadkar@gmail.com">swaraj.x.wadkar@gmail.com</a>
+    <div class="card">
+      <h2>🐳 Docker Hub</h2>
+      <p>Containerized apps available on Docker Hub.</p>
+      <a href="https://hub.docker.com/u/swarajwadkar" target="_blank">Visit Profile</a>
     </div>
   </section>
 
+  <div class="email">
+    📧 Contact: <a href="mailto:swaraj.x.wadkar@gmail.com">swaraj.x.wadkar@gmail.com</a>
+  </div>
 </body>
 </html>
